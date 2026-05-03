@@ -2,7 +2,6 @@
 
 A comprehensive data analytics project analyzing the Google Play Store app ecosystem through data cleaning, visualization, and sentiment analysis. This project leverages advanced analytics techniques to understand app market dynamics and user sentiments.
 
----
 
 ## 📋 Project Overview
 
@@ -17,7 +16,6 @@ This repository contains an in-depth analysis of Android apps on the Google Play
 - **Sentiment Analysis**: Assessing user sentiments through review data
 - **Interactive Visualizations**: Creating compelling visual representations of insights
 
----
 
 ## 📁 Repository Structure
 
@@ -33,7 +31,6 @@ OIBSIP_Data-Analytics_3/
 └── Visualization/                           # Visualization outputs
 ```
 
----
 
 ## 🗄️ Database Schema
 
@@ -69,7 +66,6 @@ Contains sentiment analysis of user reviews:
 | Sentiment_Polarity | FLOAT | Polarity score (-1 to 1) |
 | Sentiment_Subjectivity | FLOAT | Subjectivity score (0 to 1) |
 
----
 
 ## 🧹 Data Cleaning Process
 
@@ -93,7 +89,6 @@ The project includes comprehensive data cleaning operations:
 ### Duplicate Removal
 - Eliminated duplicate app entries, retaining the lowest App_ID
 
----
 
 ## 📊 Analytics & Queries
 
@@ -127,7 +122,6 @@ The project includes comprehensive data cleaning operations:
   - High ratings → More positive reviews relationship
   - App popularity vs user sentiment
 
----
 
 ## 🔍 Key Insights & Metrics
 
@@ -160,7 +154,6 @@ The project includes comprehensive data cleaning operations:
    - Polarity trends across categories
    - Subjectivity analysis
 
----
 
 ## 📈 Visualization Types
 
@@ -172,7 +165,6 @@ The project includes preparation for multiple visualization types:
 - **Line Charts**: App size vs rating trends
 - **Heatmaps**: Correlation analysis for multiple dimensions
 
----
 
 ## 🛠️ Technologies Used
 
@@ -182,7 +174,6 @@ The project includes preparation for multiple visualization types:
 - **Analysis Tools**: SQL queries for data extraction and transformation
 - **Visualization**: Prepared for integration with Python (matplotlib/seaborn), Tableau, or Power BI
 
----
 
 ## 📝 SQL Query Categories
 
@@ -208,7 +199,6 @@ The project includes preparation for multiple visualization types:
 - Polarity and subjectivity analysis
 - Correlation studies
 
----
 
 ## 🚀 Getting Started
 
@@ -238,7 +228,6 @@ The project includes preparation for multiple visualization types:
    SOURCE sql\ queries.sql;
    ```
 
----
 
 ## 📚 Datasets
 
@@ -250,7 +239,6 @@ The project includes preparation for multiple visualization types:
 - **unprocessed apps dataset.csv** (~1.2 MB): Original app data
 - **unprocessed user_reviews dataset.csv** (~7.3 MB): Original review data
 
----
 
 ## 🎯 Project Objectives
 
@@ -261,7 +249,6 @@ The project includes preparation for multiple visualization types:
 ✅ **Visualization**: Create compelling visual representations  
 ✅ **Skills Integration**: Apply data visualization best practices  
 
----
 
 ## 📊 Sample Query Example
 
@@ -346,7 +333,6 @@ GROUP BY a.Category
 ORDER BY Avg_Rating DESC;
 ```
 
----
 
 ## 💡 Key Takeaways
 
@@ -356,7 +342,6 @@ ORDER BY Avg_Rating DESC;
 - Sentiment analysis capabilities for user perception
 - Foundation for interactive dashboard development
 
----
 
 ## 📌 Learning Outcomes
 
@@ -367,19 +352,16 @@ Through this project, you'll gain expertise in:
 - **Data Visualization**: Communicating insights effectively
 - **Market Analysis**: Interpreting business metrics
 
----
 
 ## 📄 License
 
 This project is part of the OIBSIP (Oasis Infobyte Summer Internship Program) Data Analytics curriculum.
 
----
 
 ## 👨‍💻 Author
 
 **Aman-raj048**
 
----
 
 ## 🔗 References
 
@@ -387,13 +369,11 @@ This project is part of the OIBSIP (Oasis Infobyte Summer Internship Program) Da
 - **Project Type**: Academic Research & Data Analytics
 - **Dataset Source**: Google Play Store Public Data
 
----
 
 ## 📞 Support
 
 For questions or issues related to this project, please refer to the query files and schema documentation provided in the repository.
 
----
 
 **Last Updated**: 2026-05-03  
 **Status**: Active Development
