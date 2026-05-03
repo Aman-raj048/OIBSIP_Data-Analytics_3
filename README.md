@@ -1,4 +1,6 @@
-# Google Play Store Data Analytics Project 📊
+# 📱 Unveiling the Android App Market: Google Play Store Analysis
+
+**OIBSIP Internship – Level 2 Data Analytics | Project 3**
 
 A comprehensive data analytics project analyzing the Google Play Store app ecosystem through data cleaning, visualization, and sentiment analysis. This project leverages advanced analytics techniques to understand app market dynamics and user sentiments.
 
