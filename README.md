@@ -6,6 +6,9 @@ A comprehensive data analytics project analyzing the Google Play Store app ecosy
 
 ## 📋 Project Overview
 
+**Project Title**: Unveiling the Android App Market: Analyzing Google Play Store Data   
+**Database**: `google_play_store`
+
 This repository contains an in-depth analysis of Android apps on the Google Play Store, exploring app distribution, ratings, pricing trends, and user sentiments. The project demonstrates end-to-end data analytics workflow including:
 
 - **Data Cleaning & Preparation**: Correcting data types and handling missing values
