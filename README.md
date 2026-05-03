@@ -262,6 +262,55 @@ The project includes preparation for multiple visualization types:
 
 ## 📊 Sample Query Example
 
+### Final Schema Update (Evaluator-friendly datatypes)
+```sql
+ALTER TABLE apps
+MODIFY App VARCHAR(255) NOT NULL,
+MODIFY Category VARCHAR(100),
+MODIFY Rating FLOAT,
+MODIFY Reviews INT,
+MODIFY Size VARCHAR(50),
+MODIFY Installs VARCHAR(50),
+MODIFY Type ENUM('Free','Paid'),
+MODIFY Price DECIMAL(10,2),
+MODIFY Content_Rating VARCHAR(50),
+MODIFY Genres VARCHAR(100),
+MODIFY Last_Updated DATE,
+MODIFY Current_Ver VARCHAR(50),
+MODIFY Android_Ver VARCHAR(50);
+```
+
+```sql
+ALTER TABLE user_reviews 
+MODIFY Translated_Review TEXT,
+MODIFY Sentiment VARCHAR(20),
+MODIFY Sentiment_Polarity FLOAT,
+MODIFY Sentiment_Subjectivity FLOAT;
+```
+
+### Category wise app count + review count
+```sql
+SELECT a.Category,
+       COUNT(DISTINCT a.App_ID) AS App_Count,
+       COUNT(ur.Review_ID) AS Review_Count
+FROM apps a
+LEFT JOIN user_reviews ur ON a.App_ID = ur.App_ID
+GROUP BY a.Category
+ORDER BY App_Count DESC;
+```
+
+
+### Free vs Paid apps + sentiment distribution
+```sql
+SELECT a.Type,
+       ur.Sentiment,
+       COUNT(*) AS Review_Count
+FROM apps a
+JOIN user_reviews ur ON a.App_ID = ur.App_ID
+GROUP BY a.Type, ur.Sentiment
+ORDER BY a.Type, Review_Count DESC;
+```
+
 ### Get Top 10 Apps by Review Count
 ```sql
 SELECT a.App, COUNT(ur.Review_ID) AS Review_Count
@@ -270,6 +319,16 @@ JOIN user_reviews ur ON a.App_ID = ur.App_ID
 GROUP BY a.App
 ORDER BY Review_Count DESC
 LIMIT 10;
+```
+
+
+### Pricing trends: average price per category
+```sql
+SELECT a.Category, ROUND(AVG(a.Price),2) AS Avg_Price
+FROM apps a
+WHERE a.Type = 'Paid'
+GROUP BY a.Category
+ORDER BY Avg_Price DESC;
 ```
 
 ### Category Performance Analysis
