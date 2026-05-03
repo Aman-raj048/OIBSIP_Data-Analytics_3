@@ -125,38 +125,6 @@ The project includes comprehensive data cleaning operations:
   - App popularity vs user sentiment
 
 
-## 🔍 Key Insights & Metrics
-
-### Data Statistics
-- **Total Apps Analyzed**: ~10,000+ applications
-- **Total User Reviews**: ~100,000+ reviews
-- **Categories Covered**: 33+ different app categories
-- **Rating Range**: 0-5.0 scale
-- **Sentiment Classification**: Positive, Negative, Neutral
-
-### Analysis Focus Areas
-
-#### 1. **App Distribution**
-   - Category-wise app count
-   - Free vs Paid distribution
-   - Content rating breakdown
-
-#### 2. **Performance Indicators**
-   - Average ratings per category
-   - Installation trends
-   - User engagement through reviews
-
-#### 3. **Market Dynamics**
-   - Pricing strategies by category
-   - App size trends
-   - Update frequency
-
-#### 4. **User Sentiment**
-   - Review sentiment distribution
-   - Polarity trends across categories
-   - Subjectivity analysis
-
-
 ## 📈 Visualization Types
 
 The project includes preparation for multiple visualization types:
