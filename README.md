@@ -167,6 +167,15 @@ The project includes preparation for multiple visualization types:
 - **Line Charts**: App size vs rating trends
 - **Heatmaps**: Correlation analysis for multiple dimensions
 
+## Tools Used
+
+| Tool | Purpose |
+|---|---|
+| **MySQL 8.0** | Database creation, data cleaning, EDA queries |
+| **MySQL Workbench** | SQL execution and schema management |
+| **Microsoft Word** | EDA and visualization reports |
+| **Excel / Charting** | Visualization of query outputs |
+
 
 ## 📝 SQL Query Categories
 
